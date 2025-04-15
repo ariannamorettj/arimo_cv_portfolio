@@ -55,16 +55,18 @@
         <!-- Titolo della sezione -->
         <h2 class="mb-4 text-center">Personal Information</h2>
         <div class="row d-flex">
-          <!-- Colonna per l'immagine (50% dello spazio) -->
-          <div class="fixed-col d-flex justify-content-center align-items-center">
-            <img
-              src="assets/img/cv_pic.jpg"
-              alt="Arianna Moretti"
-              class="img-fluid profile-photo"
-            />
+          <!-- Colonna per l'immagine (50% dello spazio su desktop, 100% su mobile) -->
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="circular-frame">
+              <img
+                src="assets/img/cv_pic.jpg"
+                alt="Arianna Moretti"
+                class="img-fluid profile-photo"
+              />
+            </div>
           </div>
-          <!-- Colonna per il testo (50% dello spazio) -->
-          <div class="fixed-col d-flex flex-column justify-content-center">
+          <!-- Colonna per il testo (50% dello spazio su desktop, 100% su mobile) -->
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
             <p><strong>Arianna Moretti</strong></p>
             <p>Date of birth: 16 May 1997</p>
             <p>Nationality: Italian</p>
@@ -87,7 +89,6 @@
           </a>
         </div>
       </section>
-
       <!-- Altre sezioni del CV (contenuto invariato per brevità) -->
       <section id="esperienza-professionale" class="mb-5">
         <h2>Professional Experience</h2>

@@ -311,11 +311,41 @@ a:hover {
 
 
 /* Animazione e dimensionamento per l'immagine del profilo */
+/* Contenitore per la foto senza forzare un rapporto d'aspetto fisso */
+.img-frame {
+  width: 100%;
+  max-width: 500px;  /* Puoi regolare questo valore in base alle tue necessità */
+  margin: 0 auto;    /* Centra il contenitore nella colonna */
+  overflow: hidden;  /* (Facoltativo) Nasconde eventuali bordi eccedenti, se necessario */
+}
+
+/* Immagine responsiva che mantiene le proporzioni originali */
 .profile-photo {
-  animation: slideDownColor 1s ease-out forwards;
-  filter: grayscale(100%);
   max-width: 100%;
-  max-height: 300px; /* Limita l'altezza per non sforare lo spazio */
+  height: auto;
+  display: block;
+}
+
+/* Frame tondo per l'immagine (uguale a quello usato nella sezione Personal Information) */
+.circular-frame {
+  width: 250px;       /* Regola la dimensione in base alle tue esigenze */
+  height: 250px;      /* Regola la dimensione in base alle tue esigenze */
+  border-radius: 50%; /* Rende il frame tondo */
+  overflow: hidden;   /* Nasconde le parti in eccesso */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--color-verde); /* Bordo, usa il colore verde dalla palette */
+  margin: 0 auto;
+}
+
+/* L'immagine all'interno del frame */
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;       /* Copre il frame, ritagliando eventuali eccessi */
+  object-position: center; /* Centro l'immagine */
+  display: block;
 }
 
 @keyframes slideDownColor {

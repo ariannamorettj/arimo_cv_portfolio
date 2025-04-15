@@ -326,25 +326,27 @@ a:hover {
   display: block;
 }
 
-/* Frame tondo per l'immagine (uguale a quello usato nella sezione Personal Information) */
+
+/* Frame tondo per l'immagine con bordo e sfondo beige */
 .circular-frame {
-  width: 250px;       /* Regola la dimensione in base alle tue esigenze */
-  height: 250px;      /* Regola la dimensione in base alle tue esigenze */
-  border-radius: 50%; /* Rende il frame tondo */
-  overflow: hidden;   /* Nasconde le parti in eccesso */
+  width: 250px;       /* Modifica in base alle tue esigenze */
+  height: 250px;      /* Modifica in base alle tue esigenze */
+  border-radius: 50%;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 5px solid var(--color-verde); /* Bordo, usa il colore verde dalla palette */
+  border: 5px solid var(--color-verde); /* Bordo di 5px con il colore verde */
   margin: 0 auto;
+  background-color: var(--color-beige); /* Sfondo beige per la "carta" */
 }
 
-/* L'immagine all'interno del frame */
+/* Immagine nel frame: si adatta mantenendo le proporzioni originali, coprendo il frame */
 .profile-photo {
   width: 100%;
   height: 100%;
-  object-fit: cover;       /* Copre il frame, ritagliando eventuali eccessi */
-  object-position: center; /* Centro l'immagine */
+  object-fit: cover;
+  object-position: center;
   display: block;
 }
 
@@ -483,4 +485,338 @@ a:hover {
 }
 .publication:hover, .event:hover {
   transform: translateY(-5px);
+}
+
+#informazioni-personali {
+  background-color: var(--color-beige);
+  padding: 2rem;             /* Aggiunge un po' di spazio interno */
+  border-radius: 0.5rem;       /* Eventuale arrotondamento degli angoli */
+}
+
+/* Imposta lo sfondo della sezione Portfolio Intro a beige */
+#portfolio-intro {
+  background-color: var(--color-beige);
+  padding: 2rem; /* Regola il padding in base alle tue esigenze */
+  border-radius: 0.5rem; /* Arrotonda eventualmente gli angoli */
+}
+
+/* Sezione Portfolio (container) */
+#portfolio-content {
+  background-color: var(--color-white);
+  /* Se vuoi mantenere un padding interno per la sezione, puoi aggiungerlo */
+  padding: 2rem;
+}
+
+/* Portfolio Gallery: rimuove lo sfondo se presente, in modo che il container (#portfolio-content) gestisca lo sfondo */
+.portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: transparent; /* oppure rimuovi la proprietà */
+}
+
+/* Modifica per le Card dei Progetti: ora avranno sfondo beige */
+.project-item {
+  background-color: var(--color-beige);
+  border: 1px solid var(--color-beige);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+}
+
+
+#esperienza-professionale h3 {
+  display: inline-block;
+  border-bottom: 2px solid var(--color-verde);
+  padding-bottom: 0.2em;
+}
+
+#formazione h3 {
+  display: inline-block;
+  border-bottom: 2px solid var(--color-verde);
+  padding-bottom: 0.2em;
+}
+
+/* Evidenzia il titolo cliccabile e aggiungi una freccia */
+#esperienza-professionale h2 {
+  cursor: pointer;
+  position: relative;
+  display: block;      /* Assicura che l'elemento sia a blocco */
+  width: 100%;         /* Occupa l'intera larghezza */
+  text-align: center;  /* Centra il testo */
+  padding-right: 2rem; /* Spazio per l'icona, se desiderata */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+  margin: 0 auto;
+}
+
+/* Aggiunge una freccia accanto al titolo */
+#esperienza-professionale h2::after {
+  content: "▼"; /* Freccia verso il basso */
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Ruota la freccia quando il titolo ha aria-expanded="true" */
+#esperienza-professionale h2[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+#formazione h2 {
+  cursor: pointer;
+  position: relative;
+  display: block;      /* Assicura che l'elemento sia a blocco */
+  width: 100%;         /* Occupa l'intera larghezza */
+  text-align: center;  /* Centra il testo */
+  padding-right: 2rem; /* Spazio per l'icona, se desiderata */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+  margin: 0 auto;
+}
+
+/* Aggiungi la freccia accanto al titolo, se vuoi rendere evidente la possibilità di click */
+#formazione h2::after {
+  content: "▼";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+#formazione h2[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+
+/* Titolo della sezione (collapsabile) */
+#language-skills h2 {
+  color: var(--color-marrone);
+  font-family: var(--font-headings);
+  width: 100%;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+}
+
+/* Titolo della sezione Language Skills uniformato */
+#language-skills h2 {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 600px;      /* Larghezza massima, da adattare se necessario */
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 2rem;   /* Spazio a destra per la freccia */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+}
+
+/* Freccia a destra */
+#language-skills h2::after {
+  content: "▼";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Ruota la freccia quando il contenuto è espanso */
+#language-skills h2[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Tabella e bottoni: stili già definiti precedentemente */
+.language-table th,
+.language-table td {
+  vertical-align: middle;
+  padding: 0.75rem;
+}
+.language-table th {
+  background-color: var(--color-verde);
+  border-bottom: 2px solid var(--color-marrone);
+  font-family: var(--font-headings);
+  font-size: 0.8rem;
+  color: var(--color-white);
+
+}
+.language-note {
+  margin-top: 1rem;
+  color: var(--color-marrone);
+}
+.btn-custom {
+  font-family: var(--font-headings) !important;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+a.btn.btn-custom[href="phd.html#scientific-publications"] {
+  background-color: var(--color-arancione) !important;
+  color: var(--color-white) !important;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+a.btn.btn-custom[href="phd.html#scientific-publications"]:hover {
+  background-color: var(--color-viola) !important;
+}
+
+
+.btn-ielts {
+  background-color: var(--color-arancione);
+  color: var(--color-white);
+}
+.btn-ielts:hover {
+  background-color: var(--color-viola);
+}
+.btn-cae {
+  background-color: var(--color-viola);
+  color: var(--color-white);
+}
+.btn-cae:hover {
+  background-color: var(--color-arancione);
+}
+
+/* Stile uniformato per i titoli delle sezioni collapsable */
+
+.collapsible-section {
+  margin-top: 2rem;  /* Uniforma lo spacing per tutte le sezioni collassabili */
+}
+
+.collapsible-section h2 {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 600px;      /* Uniforma la larghezza */
+  margin: 0 auto;
+  text-align: center;
+  padding-right: 2rem;   /* Spazio per la freccia */
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+}
+
+/* Freccia a destra per indicare la collapsabilità */
+.collapsible-section h2::after {
+  content: "▼";
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.collapsible-section h2[aria-expanded="true"]::after {
+  transform: translateY(-50%) rotate(180deg);
+}
+
+/* Stili per l'elenco delle competenze */
+.skills-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  column-count: 2;   /* Visualizza in due colonne */
+  column-gap: 2rem;
+  font-family: var(--font-body);
+  color: var(--color-black);
+}
+
+.skills-list ul li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.75em;
+}
+
+/* Aggiunge un'icona di check a sinistra di ogni voce */
+.skills-list ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--color-arancione);
+  font-size: 1rem;
+  line-height: 1;
+}
+
+/* Responsive: per schermi piccoli, una sola colonna */
+@media (max-width: 576px) {
+  .skills-list ul {
+    column-count: 1;
+  }
+}
+
+.collapsible-section h2 {
+  cursor: pointer;
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  margin: 2rem auto 1rem auto; /* ad esempio, margine sopra 2rem e sotto 1rem */
+  text-align: center;
+  padding-right: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-viola);
+}
+
+
+/* Titolo della sezione principale */
+#volunteering h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: var(--color-marrone);
+  font-family: var(--font-headings);
+}
+
+/* Stile per i titoli delle singole esperienze */
+#volunteering h3 {
+  display: inline-block;
+  border-bottom: 2px solid var(--color-verde);
+  padding-bottom: 0.2em;
+  margin-bottom: 0.5em;
+  font-family: var(--font-headings);
+  color: var(--color-marrone);
+}
+
+.social-links p {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--color-marrone);
+  margin: 0;
+}
+
+.social-links a {
+  color: var(--color-viola);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: var(--color-arancione);
 }

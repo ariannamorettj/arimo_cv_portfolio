@@ -50,69 +50,406 @@
     </header>
     <!-- Main CV Content -->
     <main class="container py-5 px-3 px-md-5">
-      <!-- Sezione Informazioni Personali -->
-      <section id="informazioni-personali" class="mb-5">
-        <!-- Titolo della sezione -->
-        <h2 class="mb-4 text-center">Personal Information</h2>
-        <div class="row d-flex">
-          <!-- Colonna per l'immagine (50% dello spazio su desktop, 100% su mobile) -->
-          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-            <div class="circular-frame">
-              <img
-                src="assets/img/cv_pic.jpg"
-                alt="Arianna Moretti"
-                class="img-fluid profile-photo"
-              />
-            </div>
+
+    <!-- Sezione Informazioni Personali -->
+    <section id="informazioni-personali" class="mb-5">
+      <!-- Titolo della sezione -->
+      <h2 class="mb-4 text-center">Personal Information</h2>
+      <div class="row d-flex">
+        <!-- Colonna per l'immagine (50% dello spazio su desktop, 100% su mobile) -->
+        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+          <div class="circular-frame">
+            <img
+              src="assets/img/cv_pic.jpg"
+              alt="Arianna Moretti"
+              class="img-fluid profile-photo"
+            />
           </div>
-          <!-- Colonna per il testo (50% dello spazio su desktop, 100% su mobile) -->
-          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-            <p><strong>Arianna Moretti</strong></p>
-            <p>Date of birth: 16 May 1997</p>
-            <p>Nationality: Italian</p>
-            <p>Phone: (+39) 3318067328</p>
+        </div>
+        <!-- Colonna per il testo (50% dello spazio su desktop, 100% su mobile) -->
+        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+          <p><strong>Arianna Moretti</strong></p>
+          <p>Date of birth: 16 May 1997</p>
+          <p>Nationality: Italian</p>
+          <p>Phone: (+39) 3318067328</p>
+          <p>
+            Email:
+            <a href="mailto:moretti.arianna.uni@gmail.com">moretti.arianna.uni@gmail.com</a>,
+            <a href="mailto:arianna.moretti4@unibo.it">arianna.moretti4@unibo.it</a>,
+            <a href="mailto:arianna.moretti2@studio.unibo.it">arianna.moretti2@studio.unibo.it</a>
+          </p>
+          <!-- Nuovo blocco per i profili social -->
+          <div class="social-links mt-3">
             <p>
-              Email:
-              <a href="mailto:arianna.moretti4@unibo.it">arianna.moretti4@unibo.it</a>,
-              <a href="mailto:arianna.moretti2@studio.unibo.it">arianna.moretti2@studio.unibo.it</a>
+              <a href="https://github.com/ariannamorettj" target="_blank">GitHub</a> |
+              <a href="https://it.linkedin.com/in/arianna-moretti-588b72233" target="_blank">LinkedIn</a> |
+              <a href="https://orcid.org/0000-0001-5486-7070" target="_blank">ORCID</a>
             </p>
-            <p>Address: Via Nicolò Dall'Arca 58, Bologna, 40129, Italy</p>
           </div>
         </div>
-        <!-- Sezione Bottoni per il Download del CV -->
-        <div class="text-center mt-4">
-          <a href="assets/doc/CV_Arianna_Moretti_8_24_extended[7176].pdf" target="_blank" class="btn btn-custom btn-extended m-2">
-            Download Extended CV
-          </a>
-          <a href="assets/doc/CV_Short_AriannaMoretti_02_25_.pdf" target="_blank" class="btn btn-custom btn-short m-2">
-            Download Short CV
-          </a>
+      </div>
+      <!-- Sezione Bottoni per il Download del CV -->
+      <div class="text-center mt-4">
+        <a href="assets/doc/CV_Arianna_Moretti_8_24_extended[7176].pdf" target="_blank" class="btn btn-custom btn-extended m-2">
+          Download Extended CV
+        </a>
+        <a href="assets/doc/CV_Short_AriannaMoretti_02_25_.pdf" target="_blank" class="btn btn-custom btn-short m-2">
+          Download Short CV
+        </a>
+      </div>
+    </section>
+      <!-- Sezione Esperienza Professionale -->
+      <section id="esperienza-professionale" class="mb-5 collapsible-section education-section">
+        <!-- Titolo della sezione cliccabile -->
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#experienceContent" aria-expanded="false" aria-controls="experienceContent" style="cursor: pointer;">
+          Professional Experience
+        </h2>
+        <!-- Contenuto Collassabile -->
+        <div class="collapse" id="experienceContent">
+          <!-- Esperienza 1 -->
+          <div class="experience-item mb-4">
+            <h3>Ph.D. Student in Cultural Heritage in the Digital Ecosystem</h3>
+            <p><strong>1 MAR 2023 – CURRENT, Bologna, Italy</strong></p>
+            <p><em>FICLIT (UNIBO) – University of Bologna</em></p>
+            <p>
+              The main research interest of my PhD is the automation of metadata crosswalks between different data models and file formats.
+              More in detail, I deal with the creation of highly reusable workflows for the exchange of variously modeled metadata in the cultural heritage domain, with particular attention to the RDF serialization formats.
+              I pursue the same research interests as a part of the Spoke 4 of the PNRR Extended Partnership 5 (Cultural Heritage Active Innovation for Sustainable Society – CHANGES) and as a software developer at OpenCitations.
+            </p>
+            <p>
+              <strong>Business or Sector:</strong> Other service activities<br>
+              <strong>Department:</strong> Department of Classical Philology and Italian Studies<br>
+              <strong>Website:</strong> <a href="https://phd.unibo.it/chede/en" target="_blank">https://phd.unibo.it/chede/en</a>
+            </p>
+          </div>
+
+          <!-- Esperienza 2 -->
+          <div class="experience-item mb-4">
+            <h3>Teaching Tutor for Basic Computer Science Course</h3>
+            <p><strong>14 DEC 2022 – CURRENT, Bologna, Italy</strong></p>
+            <p><em>FICLIT (UNIBO) – University of Bologna</em></p>
+            <p>
+              Educational support for the Basic Computer Science course (1) (A-L) within the Humanities degree program (8850) at the University of Bologna.
+              The course covers the following topics:
+            </p>
+            <ul>
+              <li>Introduction to computational thinking</li>
+              <li>Data structures</li>
+              <li>Algorithms and computability</li>
+              <li>Programming languages</li>
+              <li>World Wide Web</li>
+              <li>Internet and information transfer</li>
+              <li>Web pages</li>
+              <li>Information technology in the humanities</li>
+            </ul>
+            <p>
+              <strong>Department:</strong> Department of Classical Philology and Italian Studies<br>
+              <strong>Email:</strong> <a href="mailto:ficlit.info@unibo.it">ficlit.info@unibo.it</a><br>
+              <strong>Website:</strong> <a href="https://ficlit.unibo.it/it" target="_blank">https://ficlit.unibo.it/it</a>
+            </p>
+          </div>
+
+          <!-- Esperienza 3 -->
+          <div class="experience-item mb-4">
+            <h3>Software Developer at OpenCitations - Research Fellow</h3>
+            <p><strong>1 APR 2022 – 28 FEB 2023, Bologna, Italy</strong></p>
+            <p><em>FICLIT (UNIBO) – University of Bologna</em></p>
+            <p>
+              <strong>Responsibilities:</strong>
+            </p>
+            <ul>
+              <li>Python software development for processing citation and bibliographic data</li>
+              <li>Creation of indexes of citation data (processing and production of CSV, JSON, RDF file formats)</li>
+              <li>Data extraction, processing, and visualization in JavaScript (from Prometheus file format), using CSS and HTML</li>
+              <li>Data analysis and processing for metadata crosswalk from new data sources to OpenCitations Data Model</li>
+              <li>Use of APIs (data extraction and processing)</li>
+              <li>Preliminary work to create APIs for querying the citation indexes</li>
+              <li>Study and use of Semantic Web technologies (Linked Data)</li>
+              <li>Data analysis related to the use of the services provided by OpenCitations</li>
+              <li>Collaboration in writing scholarly articles</li>
+              <li>Application of foundational Open Science principles</li>
+            </ul>
+            <p>
+              <strong>Business or Sector:</strong> Education<br>
+              <strong>Department:</strong> Department of Classical Philology and Italian Studies<br>
+              <strong>Address:</strong> Via Zamboni, 32, 40126, Bologna, Italy<br>
+              <strong>Email:</strong> <a href="mailto:contact@opencitations.net">contact@opencitations.net</a><br>
+              <strong>Website:</strong> <a href="http://opencitations.net" target="_blank">http://opencitations.net</a>
+            </p>
+          </div>
+
+          <!-- Esperienza 4 -->
+          <div class="experience-item mb-4">
+            <h3>Intern (for Curricular Internship) at OpenCitations Digital Humanities Advanced Research Center (DH.ARC)</h3>
+            <p><strong>13 JAN 2022 – 9 FEB 2022, Bologna (BO), Via Zamboni, 34, Italy</strong></p>
+            <p>
+              Participation in OpenCitations' projects at the Digital Humanities Advanced Research Center, including:
+            </p>
+            <ul>
+              <li>Data extraction from log data files (Prometheus file format)</li>
+              <li>Data processing</li>
+              <li>Data visualization</li>
+            </ul>
+            <p>
+              <strong>Languages & Technologies:</strong> Python, JavaScript (D3.js, Chart.js), Prometheus toolkit
+            </p>
+          </div>
+
+          <!-- Esperienza 5 -->
+          <div class="experience-item mb-4">
+            <h3>Intern (for Thesis Internship) at OpenCitations Digital Humanities Advanced Research Center (DH.ARC)</h3>
+            <p><strong>3 NOV 2021 – 3 JAN 2022, Bologna (BO), Via Zamboni, 34, Italy</strong></p>
+            <p>
+              Participation in OpenCitations' projects at the Digital Humanities Advanced Research Center, including:
+            </p>
+            <ul>
+              <li>Data extraction</li>
+              <li>Data processing</li>
+              <li>Triplestore population for citation data index creation (using Blazegraph)</li>
+            </ul>
+            <p>
+              <strong>Languages & Technologies:</strong> Python, SPARQL, Semantic Web Technologies
+            </p>
+          </div>
+
+          <!-- Esperienza 6 -->
+          <div class="experience-item mb-4">
+            <h3>Intern (for Curricular Internship) at the Human Resources Office of SME Group Ltd.</h3>
+            <p><strong>24 MAR 2019 – 4 APR 2019, Cessalto (TV), Via Vittoria, 45, Italy</strong></p>
+            <p>
+              Activities included:
+            </p>
+            <ul>
+              <li>Supporting employees in safety training and courses</li>
+              <li>Organizing and filing documentation related to safety courses</li>
+              <li>Data entry for employees' work careers and shift organization</li>
+              <li>Conducting training and updating activities</li>
+              <li>Assisting the HR manager in employee interviews</li>
+              <li>Selecting resumes for job interviews based on required skills</li>
+            </ul>
+          </div>
+
+        </div> <!-- Fine contenuto collassabile -->
+      </section>
+
+      <!-- Sezione Education -->
+      <section id="formazione" class="mb-5 collapsible-section esperienza-professionale-section">
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#educationContent" aria-expanded="false" aria-controls="educationContent" style="cursor:pointer;">
+          Education
+        </h2>
+        <div class="collapse" id="educationContent">
+          <!-- Education Item 1: Master's Degree -->
+          <div class="education-item mb-4">
+            <h3>Master's Degree in Digital Humanities and Digital Knowledge</h3>
+            <p><strong>AUG 2019 – FEB 2022, Bologna, Italy</strong></p>
+            <p>
+              Alma Mater Studiorum, University of Bologna, FICLIT Department<br>
+              Fundamentals of programming (Python, JavaScript, R, SPARQL), Web development (HTML, CSS, JavaScript), Semantic Web technologies, Natural Language Processing.
+            </p>
+            <p>
+              <strong>Address:</strong> Via Zamboni 34, 40126, Bologna, Italy<br>
+              <strong>Website:</strong> <a href="https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge" target="_blank">https://corsi.unibo.it/2cycle/DigitalHumanitiesKnowledge</a>
+            </p>
+            <p><strong>Final grade:</strong> 110/110 con Lode</p>
+            <p>
+              <strong>Thesis:</strong> Extending The OpenCitations Codebase For Creating Non-DOI Citation Indexes: The Ingestion Of The NIH Open Citation Collection
+            </p>
+          </div>
+
+          <!-- Education Item 2: Bachelor's Degree -->
+          <div class="education-item mb-4">
+            <h3>Bachelor's Degree in Anthropology, Religions and Oriental Civilizations</h3>
+            <p><strong>AUG 2016 – JUN 2019, Bologna, Italy</strong></p>
+            <p>
+              Alma Mater Studiorum, University of Bologna, DISCI Department<br>
+              Antropologia Culturale, Tecniche della Ricerca Etnografica, Antropologia Digitale.
+            </p>
+            <p>
+              <strong>Address:</strong> Via Zamboni, 38, 40126, Bologna, Italy<br>
+              <strong>Website:</strong> <a href="https://corsi.unibo.it/laurea/ScienzeAntropologiche" target="_blank">https://corsi.unibo.it/laurea/ScienzeAntropologiche</a>
+            </p>
+            <p><strong>Final grade:</strong> 110/110 con Lode</p>
+            <p>
+              <strong>Thesis:</strong> Business, Social Networks, E-Tribes, and "Virtual" Realities: An Analysis of Ethnographic Research on Digital Social Platforms
+            </p>
+          </div>
+
+          <!-- Education Item 3: High School Diploma -->
+          <div class="education-item mb-4">
+            <h3>Classical High School Diploma</h3>
+            <p><strong>AUG 2011 – JUN 2016, Jesi, Italy</strong></p>
+            <p>
+              Liceo Classico Vittorio Emanuele II<br>
+              <strong>Address:</strong> Corso Giacomo Matteotti, 48, 60035, Jesi, Italy<br>
+              <strong>Website:</strong> <a href="https://liceoclassicojesi.edu.it/" target="_blank">https://liceoclassicojesi.edu.it/</a>
+            </p>
+            <p><strong>Final grade:</strong> 100/100 con Lode</p>
+          </div>
+
         </div>
       </section>
-      <!-- Altre sezioni del CV (contenuto invariato per brevità) -->
-      <section id="esperienza-professionale" class="mb-5">
-        <h2>Professional Experience</h2>
-        <!-- contenuto invariato per brevità -->
+
+      <!-- Sezione Language Skills -->
+      <section id="language-skills" class="mb-5 collapsible-section language-section">
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#languageSkillsContent" aria-expanded="false" aria-controls="languageSkillsContent" style="cursor:pointer;">
+          Language Skills
+        </h2>
+        <div class="collapse" id="languageSkillsContent">
+          <div class="table-responsive">
+            <table class="table table-bordered text-center language-table">
+              <thead>
+                <tr>
+                  <th rowspan="2">Language</th>
+                  <th colspan="2">UNDERSTANDING</th>
+                  <th colspan="2">SPEAKING</th>
+                  <th rowspan="2">WRITING</th>
+                </tr>
+                <tr>
+                  <th>Listening</th>
+                  <th>Reading</th>
+                  <th>Spoken production</th>
+                  <th>Spoken interaction</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>ITALIAN</td>
+                  <td>C2</td>
+                  <td>C2</td>
+                  <td>C2</td>
+                  <td>C2</td>
+                  <td>C2</td>
+                </tr>
+                <tr>
+                  <td>ENGLISH</td>
+                  <td>C1</td>
+                  <td>C1</td>
+                  <td>C1</td>
+                  <td>C1</td>
+                  <td>C1</td>
+                </tr>
+                <tr>
+                  <td>FRENCH</td>
+                  <td>C1</td>
+                  <td>C1</td>
+                  <td>B2</td>
+                  <td>B2</td>
+                  <td>B2</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="text-center language-note">
+            <small>
+              Levels: A1 and A2: Basic user; B1 and B2: Independent user; C1 and C2: Proficient user
+            </small>
+          </p>
+          <div class="text-center mt-4">
+            <a href="assets/doc/IELTS.pdf" target="_blank" class="btn btn-custom btn-ielts m-2">
+              Download IELTS Certificate
+            </a>
+            <a href="assets/doc/CAE.pdf" target="_blank" class="btn btn-custom btn-cae m-2">
+              Download CAE Certificate
+            </a>
+          </div>
+        </div>
       </section>
 
-      <section id="formazione" class="mb-5">
-        <h2>Education</h2>
-        <!-- contenuto invariato per brevità -->
+      <!-- Sezione Skills and Competences (collapsabile) -->
+      <section id="competenze" class="mb-5 collapsible-section">
+        <!-- Titolo cliccabile della sezione -->
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#skillsContent" aria-expanded="false" aria-controls="skillsContent">
+          Digital Competences
+        </h2>
+        <!-- Contenuto Collassabile -->
+        <div class="collapse" id="skillsContent">
+          <div class="skills-list">
+            <ul>
+              <li>Proficient in front-end web languages: HTML, CSS, and JavaScript</li>
+              <li>Graph Database Management Skills (Blazegraph)</li>
+              <li>Expert use of Semantic Web and Linked Data Technologies (RDF, SPARQL, OWL)</li>
+              <li>Proficient in the use of major operating systems</li>
+              <li>Proficient in managing and utilizing APIs</li>
+              <li>Solid foundation in computational thinking and programming algorithms</li>
+              <li>Proficient in the use of version control systems (GitHub, GitLab)</li>
+              <li>Expert use of Python for data extraction, analysis, processing, and visualization</li>
+              <li>Expert in software development using Test Driven Development (TDD)</li>
+              <li>Good knowledge of major communication protocols, especially HTTP and HTTPS</li>
+              <li>Strong skills in formulating and utilizing data models for the cultural heritage domain</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
-      <section id="competenze" class="mb-5">
-        <h2>Skills and Competences</h2>
-        <!-- contenuto invariato per brevità -->
+      <!-- Academic Production Section -->
+      <section id="academic-production" class="mb-5 collapsible-section">
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#academicProductionContent"
+            aria-expanded="false" aria-controls="academicProductionContent" style="cursor: pointer;">
+          Academic Production
+        </h2>
+        <div class="collapse" id="academicProductionContent">
+          <div class="text-center">
+            <a href="phd.html#scientific-publications" class="btn btn-custom mt-3">
+              Go to Academic Publications and Research Products
+            </a>
+          </div>
+        </div>
       </section>
 
-      <section id="extra" class="mb-5">
-        <h2>Additional Information</h2>
-        <p><strong>Driver's license:</strong> B</p>
-        <p>
-          <strong>Communication and Interpersonal Skills:</strong>
-          Strong teamwork attitude and excellent relational skills.
-        </p>
+      <!-- Volunteering Work Experiences Section -->
+      <section id="volunteering" class="mb-5 collapsible-section">
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#volunteeringContent" aria-expanded="false" aria-controls="volunteeringContent" style="cursor:pointer;">
+          Volunteering Work Experiences
+        </h2>
+        <div class="collapse" id="volunteeringContent">
+
+          <!-- Experience 1 -->
+          <div class="volunteering-item mb-4">
+
+            <h3>Amicizia a Domicilio</h3>
+            <p><strong>OCT 2013 – NOV 2021, Jesi (Italy)</strong></p>
+            <p>
+              Volunteered at <strong>Amicizia a Domicilio</strong> (non-profit organization).<br>
+              Participated in organizational activities aimed at providing social and financial support to families in need within the local community.
+            </p>
+          </div>
+
+          <!-- Experience 2 -->
+          <div class="volunteering-item mb-4">
+            <h3>New Generation Nosy Faly ONLUS</h3>
+            <p><strong>11 AUG 2019 – 4 SEP 2019, Nosy Faly (Madagascar)</strong></p>
+            <p>
+              Volunteered at <strong>New Generation Nosy Faly ONLUS</strong>.<br>
+              Provided support in educational activities with primary and secondary school students in French.
+            </p>
+          </div>
+
+          <!-- Experience 3 -->
+          <div class="volunteering-item mb-4">
+            <h3>Bitame Lucia International School</h3>
+            <p><strong>6 AUG 2017 – 6 SEP 2017, Nkolfolou (Yaoundé, Cameroon)</strong></p>
+            <p>
+              Volunteered at <strong>Bitame Lucia International School</strong>.<br>
+              Provided support in extracurricular summer activities aimed at reinforcing fundamental subjects to help integrate future students into classes, conducted in English.
+            </p>
+          </div>
+        </div>
       </section>
+
+      <!-- Sezione Additional Information (collapsabile) -->
+      <section id="extra" class="mb-5 collapsible-section">
+        <h2 class="mb-4 text-center" data-bs-toggle="collapse" data-bs-target="#extraContent" aria-expanded="false" aria-controls="extraContent" style="cursor: pointer;">
+          Additional Information
+        </h2>
+        <div class="collapse" id="extraContent">
+          <p><strong>Driver's license:</strong> B</p>
+          <p>
+            <strong>Communication and Interpersonal Skills:</strong>
+            Solid experience in collaborative work, primarily cultivated through participation in team-based projects as part of the Master's Degree program in Digital Humanities and Digital Knowledge. Constantly trying my best to improve my originally humble time-management skills.
+          </p>
+        </div>
+      </section>
+
     </main>
 
     <!-- Footer -->

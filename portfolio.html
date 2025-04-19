@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Portfolio - Arianna Moretti</title>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,124 +12,231 @@
       href="https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200..900;1,200..900&family=Lexend+Peta:wght@100..900&family=WindSong:wght@400;500&display=swap"
       rel="stylesheet"
     />
+
     <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
     />
+
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
 
-    <!-- 3d model viewer-->
-    <script type="module"
-      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-    </script>
-
+    <!-- 3D model viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </head>
+
   <body id="page-top">
     <!-- Header e Navbar -->
     <header>
       <nav class="navbar navbar-expand-lg navbar-dark custom-navbar fixed-top">
         <div class="container">
           <a class="navbar-brand" href="index.html">Arianna Moretti</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent"
-                  aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarContent"
+            aria-controls="navbarContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="cv.html">Curriculum Vitae</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="portfolio.html">Portfolio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="phd.html">PhD Research</a>
-              </li>
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="cv.html">Curriculum Vitae</a></li>
+              <li class="nav-item"><a class="nav-link active" href="portfolio.html">Portfolio</a></li>
+              <li class="nav-item"><a class="nav-link" href="phd.html">PhD Research</a></li>
             </ul>
           </div>
         </div>
       </nav>
     </header>
+
     <!-- Main Content -->
     <main class="container py-5 px-3 px-md-5">
-      <!-- Portfolio Intro Section con immagine scorrevole -->
-      <!-- Sezione Portfolio Intro -->
-    <!-- Sezione Portfolio Intro -->
-    <section id="portfolio-intro" class="mb-5">
-      <!-- Titolo della sezione -->
-      <h2 class="mb-4 text-center">Portfolio</h2>
-      <div class="row d-flex">
-        <!-- Colonna per l'immagine (50% dello spazio) -->
-        <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
-          <div class="circular-frame">
-            <img
-              src="assets/img/pf_pic.jpg"
-              alt="Arianna Moretti Portfolio"
-              class="img-fluid profile-photo"
-            />
+      <!-- Portfolio Intro Section -->
+      <section id="portfolio-intro" class="mb-5">
+        <h2 class="mb-4 text-center">Portfolio</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 d-flex justify-content-center align-items-center">
+            <div class="circular-frame">
+              <img
+                src="assets/img/pf_pic.jpg"
+                alt="Arianna Moretti Portfolio"
+                class="img-fluid profile-photo"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+            <p>Welcome to my portfolio!</p>
+            <p>
+              In this section you will find a collection of my projects,
+              including drawings, animations, links to some websites, and
+              embedded 3D models.
+            </p>
           </div>
         </div>
-        <!-- Colonna per il testo (50% dello spazio) -->
-        <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
-          <p>Welcome to my portfolio!</p>
-          <p>
-            In this section you will find a collection of my projects, including drawings, animations,
-            links to some websites, and embedded 3D models.
-          </p>
+      </section>
+
+      <!-- Portfolio Gallery -->
+      <section id="portfolio-content">
+        <div class="row g-4">
+
+      <!-- Project 1: Digital Drawings Carousel -->
+      <div class="col-12 col-md-6">
+        <div class="card h-100">
+          <div class="card-body">
+            <h3 class="card-title">Digital Drawings</h3>
+            <div id="drawingsCarousel" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+
+                <div class="carousel-item active d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DIHE0RRofyk/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+                <div class="carousel-item d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DGrfdE3ofVu/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+                <div class="carousel-item d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DIHAUpMIkB6/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+                <div class="carousel-item d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DGt4oHdojOV/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+                <div class="carousel-item d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DEmHBZ2Ch_1/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+                <div class="carousel-item d-flex justify-content-center">
+                  <blockquote
+                    class="instagram-media"
+                    data-instgrm-permalink="https://www.instagram.com/p/DD25Op4iDqq/?utm_source=ig_web_copy_link"
+                    data-instgrm-version="14"
+                    style="width:100%; max-width:540px; margin:0 auto;">
+                  </blockquote>
+                </div>
+
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#drawingsCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#drawingsCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-      <!-- Sezione Gallery dei Progetti -->
-      <section id="portfolio-content">
-        <div class="portfolio-gallery row">
-          <!-- Esempio Progetto 1 -->
-          <div class="project-item col-md-6 mb-4">
-            <h3>Digital Drawings</h3>
-            <img src="assets/img/progetto1.jpg" alt="Screenshot Project 1" class="img-fluid" />
-            <p>
-              Brief description of the project.
-              <a href="http://linkaprogetto1.com" target="_blank">Visit the project</a>
-            </p>
-          </div>
-          <!-- Esempio Progetto 2 -->
-          <div class="project-item col-md-6 mb-4">
-            <h3>2D Animations</h3>
-            <img src="assets/img/progetto2.jpg" alt="Screenshot Project 2" class="img-fluid" />
-            <p>
-              Brief description of the project.
-              <a href="http://linkaprogetto2.com" target="_blank">Learn more</a>
-            </p>
+
+          <!-- Project 2 -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">2D Animations Reel</h3>
+                <div id="instagramCarousel" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-inner">
+                    <div class="carousel-item active d-flex justify-content-center">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DHMHw54IJkU/"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:540px; margin:0 auto;"
+                      ></blockquote>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DGXqGxWiFca/"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:540px; margin:0 auto;"
+                      ></blockquote>
+                    </div>
+                    <div class="carousel-item d-flex justify-content-center">
+                      <blockquote
+                        class="instagram-media"
+                        data-instgrm-permalink="https://www.instagram.com/reel/DFhdj5xi7Ew/"
+                        data-instgrm-version="14"
+                        style="width:100%; max-width:540px; margin:0 auto;"
+                      ></blockquote>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#instagramCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#instagramCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <!-- Esempio Progetto 3 -->
-          <div class="project-item col-md-6 mb-4">
-            <h3>Web Sites</h3>
-            <img src="assets/img/progetto3.jpg" alt="Screenshot Project 2" class="img-fluid" />
-            <p>
-              Brief description of the project.
-              <a href="http://linkaprogetto3.com" target="_blank">Learn more</a>
-            </p>
+          <!-- Project 3 -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <img src="assets/img/progetto3.jpg" class="card-img-top" alt="Web Sites">
+              <div class="card-body">
+                <h3 class="card-title">Web Sites</h3>
+                <p class="card-text">
+                  Brief description of the project.
+                  <a href="http://linkaprogetto3.com" target="_blank">Learn more</a>
+                </p>
+              </div>
+            </div>
           </div>
-          <!-- Esempio Integrazione Modello 3D -->
-          <div class="project-item col-12 mb-4">
-            <h3>Interactive 3D Model</h3>
-            <p>My first 3D NomadSculpt Model</p>
-              <script type="module"
-                src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
-              </script>
-            <model-viewer
-              src="https://pub-6c60523bdada4079abaecc5d09a63641.r2.dev/ppg_thesims.glb"
-              alt="Powerpufgirls in The Sims"
-              auto-rotate
-              camera-controls
-              style="width:100%; height:500px;">
-            </model-viewer>
+
+          <!-- Project 4 -->
+          <div class="col-12 col-md-6">
+            <div class="card h-100">
+              <div class="card-body">
+                <h3 class="card-title">Interactive 3D Model</h3>
+                <p>My first 3D NomadSculpt Model</p>
+                <model-viewer
+                  src="https://pub-6c60523bdada4079abaecc5d09a63641.r2.dev/ppg_thesims.glb"
+                  alt="Powerpufgirls in The Sims"
+                  auto-rotate
+                  camera-controls
+                  crossorigin="anonymous"
+                  style="width:100%; height:300px;"
+                ></model-viewer>
+              </div>
+            </div>
           </div>
+
         </div>
       </section>
     </main>
@@ -142,6 +250,7 @@
 
     <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script async defer src="https://www.instagram.com/embed.js"></script>
     <script src="js/scripts.js"></script>
   </body>
 </html>

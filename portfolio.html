@@ -18,6 +18,12 @@
     />
     <!-- Custom CSS -->
     <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- 3d model viewer-->
+    <script type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+    </script>
+
   </head>
   <body id="page-top">
     <!-- Header e Navbar -->
@@ -112,9 +118,12 @@
           <div class="project-item col-12 mb-4">
             <h3>Interactive 3D Model</h3>
             <p>My first 3D NomadSculpt Model</p>
+              <script type="module"
+                src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js">
+              </script>
             <model-viewer
               src="https://pub-6c60523bdada4079abaecc5d09a63641.r2.dev/ppg_thesims.glb"
-              alt="Powerpufgirls in The Sims style"
+              alt="Powerpufgirls in The Sims"
               auto-rotate
               camera-controls
               style="width:100%; height:500px;">
